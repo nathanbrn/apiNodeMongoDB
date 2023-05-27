@@ -5,7 +5,7 @@ import { jobRouter } from './routes/jobs.router';
 const app = express();
 
 const dbConnection = 'mongodb+srv://brenonathanael:qTi30CPThx80tvOX@database.bk9ntg8.mongodb.net/?retryWrites=true&w=majority';
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT ? Number(process.env.PORT) : 3333;
 
 mongoose.connect(dbConnection).then(() => {
 
@@ -13,7 +13,7 @@ mongoose.connect(dbConnection).then(() => {
 
 	app.use(express.json());
 	app.use(jobRouter);
-	
+
 	app.listen(PORT, () => {
 		console.log(`🚀 Server is running on port ${PORT}`);
 	});
