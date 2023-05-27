@@ -4,18 +4,16 @@ import { jobRouter } from './routes/jobs.router';
 
 const app = express();
 
-const dbConnection = process.env.DATABASE_URL || 'mongodb://admin:admin@localhost:27017';
+const dbConnection = 'mongodb+srv://brenonathanael:qTi30CPThx80tvOX@database.bk9ntg8.mongodb.net/?retryWrites=true&w=majority';
+const PORT = process.env.PORT || 3000;
 
 mongoose.connect(dbConnection).then(() => {
 
 	console.log('💾 Conectado ao banco de dados...');
 
-	const PORT = process.env.PORT || 3000;
-
 	app.use(express.json());
 	app.use(jobRouter);
-	app.use(express.urlencoded({ extended: true }));
-
+	
 	app.listen(PORT, () => {
 		console.log(`🚀 Server is running on port ${PORT}`);
 	});
