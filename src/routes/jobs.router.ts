@@ -1,10 +1,10 @@
-import { Router } from "express";
-import { findJobs } from "../useCases/JobCases/findJobs";
-import { createJob } from "../useCases/JobCases/createJob";
-import { updateJob } from "../useCases/JobCases/updateJob";
-import { deleteJob } from "../useCases/JobCases/deleteJob";
-import { findJob } from "../useCases/JobCases/findJob";
-import { findJobStars } from "../useCases/JobCases/findJobStars";
+import { Router } from 'express';
+import { findJobs } from '../useCases/JobCases/findJobs';
+import { createJob } from '../useCases/JobCases/createJob';
+import { updateJob } from '../useCases/JobCases/updateJob';
+import { deleteJob } from '../useCases/JobCases/deleteJob';
+import { findJob } from '../useCases/JobCases/findJob';
+import { findJobStars } from '../useCases/JobCases/findJobStars';
 
 export const jobRouter = Router();
 

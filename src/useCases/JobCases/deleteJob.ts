@@ -1,5 +1,5 @@
-import { Request, Response } from "express";
-import { Job } from "../../models/Job";
+import { Request, Response } from 'express';
+import { Job } from '../../models/Job';
 
 export async function deleteJob(req: Request, res: Response) {
   try {

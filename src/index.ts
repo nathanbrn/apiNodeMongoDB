@@ -1,6 +1,5 @@
 import express from 'express';
 import mongoose from 'mongoose';
-import { userRouter } from './routes/users.router';
 import { jobRouter } from './routes/jobs.router';
 
 const app = express();
@@ -14,10 +13,7 @@ mongoose.connect(dbConnection).then(() => {
 	const PORT = process.env.PORT || 3000;
 
 	app.use(express.json());
-	app.use([
-		userRouter,
-		jobRouter
-	]);
+	app.use(jobRouter);
 	app.use(express.urlencoded({ extended: true }));
 
 	app.listen(PORT, () => {
