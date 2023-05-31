@@ -4,7 +4,7 @@ import { jobRouter } from './routes/jobs.router';
 
 const app = express();
 
-const dbConnection = 'mongodb+srv://brenonathanael:qTi30CPThx80tvOX@database.bk9ntg8.mongodb.net/?retryWrites=true&w=majority';
+const dbConnection = 'mongodb://admin:admin@localhost:27017';
 const PORT = process.env.PORT ? Number(process.env.PORT) : 3333;
 
 mongoose.connect(dbConnection).then(() => {
