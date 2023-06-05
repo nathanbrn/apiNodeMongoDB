@@ -2,7 +2,7 @@
 
 ### Link: https://apinodemongodb.onrender.com/
 
-### Ferramentas: Node, Express, MongoDB, Mongoose, TypeScript, ESLint, TSX.
+### Ferramentas: Node, Express, MongoDB, Mongoose, TypeScript, ESLint, Prettier, TSX.
 
 
 ### Comandos:
