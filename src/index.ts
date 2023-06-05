@@ -1,10 +1,17 @@
 import express from 'express';
 import mongoose from 'mongoose';
 import { jobRouter } from './routes/jobs.router';
+import cors from 'cors';
 
 const app = express();
+app.use(
+    cors({
+        origin: '*',
+    })
+);
 
-const dbConnection = 'mongodb+srv://user:123@database.rtvjxqz.mongodb.net/?retryWrites=true&w=majority';
+const dbConnection =
+    'mongodb+srv://user:123@database.rtvjxqz.mongodb.net/?retryWrites=true&w=majority';
 const PORT = process.env.PORT ? Number(process.env.PORT) : 3333;
 
 mongoose
