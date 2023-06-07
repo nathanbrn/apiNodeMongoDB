@@ -5,6 +5,7 @@ import { updateJob } from '../useCases/JobCases/updateJob';
 import { deleteJob } from '../useCases/JobCases/deleteJob';
 import { findJob } from '../useCases/JobCases/findJob';
 import { findJobStars } from '../useCases/JobCases/findJobStars';
+import { deleteAllJobs } from '../useCases/JobCases/deleteAllJobs';
 
 export const jobRouter = Router();
 
@@ -19,3 +20,5 @@ jobRouter.put('/jobs/:id', updateJob);
 jobRouter.delete('/jobs/:id', deleteJob);
 
 jobRouter.get('/starjobs', findJobStars);
+
+jobRouter.delete('/jobs', deleteAllJobs);
