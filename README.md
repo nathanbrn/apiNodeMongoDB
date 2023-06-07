@@ -4,18 +4,34 @@
 
 ### Ferramentas: Node, Express, MongoDB, Mongoose, TypeScript, ESLint, Prettier, TSX.
 
-
 ### Comandos:
 
 ### Instalar dependências:
-  ##### ```npm install```
+
+##### `npm install`
 
 ### Iniciar servidor
-  ##### ```npm run dev```
+
+##### `npm run dev`
 
 ### Buildar aplicação
-  ##### ```npm run build```
+
+##### `npm run build`
 
 ### Start aplicação de produção
-  ##### ```npm start```
 
+##### `npm start`
+
+### Rotas da aplicação:
+
+##### (GET) Rota para buscar todas as vagas: `/jobs`
+
+##### (GET) Rota para buscar vaga específica: `/jobs/:id`
+
+##### (POST) Rota para cadastrar vaga: `/jobs`
+
+##### (PUT) Rota para atualizar vaga: `/jobs/:id`
+
+##### (DELETE) Rota para deletar vaga: `/jobs/:id`
+
+##### (DELETE) Rota para deletar todas as vagas: `/jobs`
