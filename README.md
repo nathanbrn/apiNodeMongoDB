@@ -28,6 +28,8 @@
 
 ##### (GET) Rota para buscar vaga específica: `/jobs/:id`
 
+##### (GET) Rota para buscar vagas destaque: `/starjobs`
+
 ##### (POST) Rota para cadastrar vaga: `/jobs`
 
 ##### (PUT) Rota para atualizar vaga: `/jobs/:id`
